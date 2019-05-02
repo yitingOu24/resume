@@ -1,6 +1,7 @@
 {
-  "name": "resuom",
+  "name": "andreas",
   "version": "1.0.0",
+  "description": "resume",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,22 +10,18 @@
     "type": "git",
     "url": "git+https://github.com/yitingOu24/resume.git"
   },
-  "author": "",
+  "author": "andreas",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/yitingOu24/resume/issues"
   },
   "homepage": "https://github.com/yitingOu24/resume#readme",
-  "description": "",
-  "dependencies": {
-    "imagemin-gifsicle": "^5.2.0",
-    "imagemin-jpegtran": "^5.0.2",
-    "imagemin-optipng": "^5.2.1",
-    "imagemin-svgo": "^6.0.0"
-  },
   "devDependencies": {
-    "browser-sync": "^2.23.6",
     "gulp": "^3.9.1",
     "gulp-imagemin": "^4.1.0"
+  },
+  "dependencies": {
+    "browser-sync": "^2.23.6",
+    "gulp-sass": "^4.0.1"
   }
 }

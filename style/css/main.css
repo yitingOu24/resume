@@ -1,0 +1,168 @@
+body {
+  background: url(../../img/concrete-texture.png); }
+
+.first-section {
+  display: flex;
+  align-content: flex-end;
+  flex-wrap: wrap; }
+  .first-section aside {
+    width: 15%;
+    background-color: #434343;
+    padding: 40% 0 2% 3%;
+    border-bottom: 5px solid #c73e3a;
+    opacity: 0;
+    transition: 1s; }
+    .first-section aside nav ul li {
+      list-style: none;
+      color: #fcfaf2;
+      position: relative;
+      transition: .2s;
+      cursor: pointer;
+      padding: 0 0 0 3%; }
+      .first-section aside nav ul li:hover {
+        background-color: #c73e3a;
+        transition: .2s; }
+      @media screen and (max-width: 768px) {
+        .first-section aside nav ul li {
+          display: inline-block;
+          padding: 0 2% 0 2%; } }
+    @media screen and (max-width: 768px) {
+      .first-section aside {
+        width: 100%;
+        text-align: center;
+        padding: 3% 0 2% 0; } }
+    .first-section aside.start_fade {
+      opacity: 1;
+      transition: 1s; }
+  .first-section .about-section {
+    position: relative;
+    width: 85%;
+    margin: 2% 0% 1% 0%;
+    background: url(../../img/01_bg.png) no-repeat;
+    background-size: 100%; }
+    @media screen and (max-width: 768px) {
+      .first-section .about-section {
+        width: 100%; } }
+    .first-section .about-section .about-section-word h1 {
+      color: #434343;
+      padding: 3% 0 3% 3%;
+      opacity: 0; }
+      @media screen and (max-width: 768px) {
+        .first-section .about-section .about-section-word h1 {
+          padding-bottom: 20%; } }
+      .first-section .about-section .about-section-word h1.start_fade {
+        opacity: 1;
+        transition: 1s;
+        transition-delay: .5s; }
+    .first-section .about-section:after {
+      content: '';
+      position: absolute;
+      right: 0;
+      bottom: -10%;
+      width: 20%;
+      height: 15%;
+      background-color: rgba(0, 137, 167, 0.5); }
+
+.intro-section {
+  position: relative;
+  margin: 10% auto 0 auto;
+  max-width: "1300px";
+  padding: 0 0 0 15%; }
+  .intro-section .intro-section-title:before {
+    content: '';
+    position: absolute;
+    top: -3%;
+    left: 5%;
+    width: 15%;
+    height: 10%;
+    background-color: rgba(199, 62, 58, 0.5); }
+  .intro-section .intro-section-title h1 {
+    color: #434343; }
+    .intro-section .intro-section-title h1 span {
+      color: #434343;
+      padding: 0 0 0 1%;
+      opacity: .7; }
+  .intro-section .intro-section-title h2 {
+    color: #0089a7;
+    padding: 1% 0 0 .5%; }
+  .intro-section .intro-section-title p {
+    max-width: 1000px;
+    color: #434343;
+    padding: 3% 0 0 .5%;
+    line-height: 2.5rem; }
+  .intro-section .intro-section-content {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5% 0 0 0; }
+    .intro-section .intro-section-content > div {
+      color: #434343;
+      width: 50%; }
+      @media screen and (max-width: 768px) {
+        .intro-section .intro-section-content > div {
+          width: 100%;
+          padding: 4% 0 0 0; } }
+      .intro-section .intro-section-content > div h2 {
+        padding: 0 0 2% 0; }
+      .intro-section .intro-section-content > div ul > li {
+        padding: 3% 0 0 0; }
+    .intro-section .intro-section-content span {
+      color: #c73e3a;
+      padding: 0 0 0 .5%; }
+
+.webite-section {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  margin: 10% auto 0 auto;
+  max-width: 1000px;
+  padding: 0 0 0 0%;
+  text-align: center; }
+  .webite-section > div {
+    width: 33%;
+    padding: 0 1% 0 1%; }
+    .webite-section > div > img {
+      max-width: 100%; }
+    .webite-section > div > a p {
+      padding: 2% 0 0 0; }
+
+.contact-section {
+  position: relative;
+  margin: 10% auto 0 auto;
+  max-width: "1300px";
+  padding: 0 0 0 15%; }
+  .contact-section:before {
+    content: '';
+    position: absolute;
+    width: 10%;
+    height: 40%;
+    background-color: rgba(0, 137, 167, 0.5);
+    right: 0;
+    top: -30%; }
+  .contact-section h1 {
+    color: #434343;
+    padding: 0 0 3% 0; }
+  .contact-section span {
+    color: #434343;
+    padding: 0 0 0 1%;
+    opacity: .7; }
+  .contact-section p {
+    padding: 1% 0 0 0; }
+    @media screen and (max-width: 768px) {
+      .contact-section p {
+        padding: 2% 0 0 0; } }
+    .contact-section p span {
+      color: #c73e3a;
+      padding: 0 .5% 0 .5%;
+      opacity: 1; }
+
+footer {
+  margin: 5% 0 0 0;
+  height: 50px;
+  background-color: #434343; }
+  footer p {
+    text-align: center;
+    color: #fcfaf2;
+    padding: 1% 0 0 0; }
+    @media screen and (max-width: 768px) {
+      footer p {
+        padding: 3% 0 0 0; } }

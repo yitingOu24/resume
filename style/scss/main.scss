@@ -1,0 +1,210 @@
+    // color
+    $point_color:rgb(199, 62, 58);
+    $sub_point_color:rgb(0, 137, 167);
+    $background_color:rgb(67, 67, 67);
+    $sub_background_color:rgb(252, 250, 242);
+    body {
+        background: url(../../img/concrete-texture.png);
+    }
+    
+    // section
+    @mixin section_large ($padding:0 0 0 15%, $width:'1300px') {
+        position: relative;
+        margin: 10% auto 0 auto;
+        max-width: $width;
+        padding: $padding;
+    }
+    
+    // first-section
+    .first-section {
+        display: flex;
+        align-content: flex-end;
+        flex-wrap: wrap;
+        aside {
+            width: 15%;
+            background-color: $background_color;
+            padding: 40% 0 2% 3%;
+            border-bottom: 5px solid $point_color;
+            //animation
+            opacity: 0;
+            transition: 1s;
+            nav ul li {
+                list-style: none;
+                color: $sub_background_color;
+                position: relative;
+                transition: .2s;
+                cursor: pointer;
+                padding: 0 0 0 3%;
+                &:hover {
+                    background-color: $point_color;
+                    transition: .2s;
+                }
+                @media screen and (max-width: 768px) {
+                    display: inline-block;
+                    padding: 0 2% 0 2%
+                }
+            }
+            @media screen and (max-width: 768px) {
+                width: 100%;
+                text-align: center;
+                padding: 3% 0 2% 0;
+            }
+            &.start_fade {
+                opacity: 1;
+                transition: 1s;
+            }
+        }
+        .about-section {
+            position: relative;
+            width: 85%;
+            margin: 2% 0% 1% 0%;
+            background: url(../../img/01_bg.png) no-repeat;
+            background-size: 100%;
+            @media screen and (max-width: 768px) {
+                width: 100%;
+            }
+            .about-section-word h1 {
+                color: $background_color;
+                padding: 3% 0 3% 3%;
+                @media screen and (max-width: 768px) {
+                    padding-bottom: 20%;
+                }
+                opacity:0;
+                &.start_fade {
+                    opacity: 1;
+                    transition: 1s;
+                    transition-delay: .5s;
+                }
+            }
+            &:after {
+                content: '';
+                position: absolute;
+                right: 0;
+                bottom: -10%;
+                width: 20%;
+                height: 15%;
+                background-color: rgba(0, 137, 167, .5);
+            }
+        }
+    }
+    
+    // intro-section
+    .intro-section {
+        @include section_large();
+        .intro-section-title {
+            &:before {
+                content: '';
+                position: absolute;
+                top: -3%;
+                left: 5%;
+                width: 15%;
+                height: 10%;
+                background-color: rgba(rgb(199, 62, 58), .5);
+            }
+            h1 {
+                color: $background_color;
+                span {
+                    color: $background_color;
+                    padding: 0 0 0 1%;
+                    opacity: .7;
+                }
+            }
+            h2 {
+                color: $sub_point_color;
+                padding: 1% 0 0 .5%;
+            }
+            p {
+                max-width: 1000px;
+                color: $background_color;
+                padding: 3% 0 0 .5%;
+                line-height: 2.5rem;
+            }
+        }
+        .intro-section-content {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 5% 0 0 0;
+            >div {
+                color: $background_color;
+                width: 50%;
+                @media screen and (max-width: 768px) {
+                    width: 100%;
+                    padding: 4% 0 0 0;
+                }
+                h2 {
+                    padding: 0 0 2% 0;
+                }
+                ul>li {
+                    padding: 3% 0 0 0;
+                }
+            }
+            span {
+                color: $point_color;
+                padding: 0 0 0 .5%;
+            }
+        }
+    }
+    
+    .webite-section {
+        display: flex;
+        flex-wrap: wrap;
+        @include section_large ($padding: 0 0 0 0%, $width: 1000px);
+        text-align: center;
+        >div {
+            width: 33%;
+            padding: 0 1% 0 1%;
+            >img {
+                max-width: 100%;
+            }
+            >a p {
+                padding: 2% 0 0 0;
+            }
+        }
+    }
+    
+    .contact-section {
+        @include section_large;
+        &:before {
+            content: '';
+            position: absolute;
+            width: 10%;
+            height: 40%;
+            background-color: rgba(0, 137, 167, .5);
+            right: 0;
+            top: -30%;
+        }
+        h1 {
+            color: $background_color;
+            padding: 0 0 3% 0;
+        }
+        span {
+            color: $background_color;
+            padding: 0 0 0 1%;
+            opacity: .7;
+        }
+        p {
+            padding: 1% 0 0 0;
+            @media screen and (max-width: 768px) {
+                padding: 2% 0 0 0;
+            }
+            span {
+                color: $point_color;
+                padding: 0 .5% 0 .5%;
+                opacity: 1;
+            }
+        }
+    }
+    
+    footer {
+        margin: 5% 0 0 0;
+        height: 50px;
+        background-color: $background_color;
+        p {
+            text-align: center;
+            color: $sub_background_color;
+            padding: 1% 0 0 0;
+            @media screen and (max-width: 768px) {
+                padding: 3% 0 0 0;
+            }
+        }
+    }

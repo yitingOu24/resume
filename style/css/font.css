@@ -1,0 +1,114 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+@font-face {
+  font-family: 'Koruri-Bold';
+  src: url("../../font/Koruri-Bold.ttf") format("opentype"); }
+
+@font-face {
+  font-family: 'Koruri-Regular';
+  src: url("../../font/Koruri-Regular.ttf") format("opentype"); }
+
+@font-face {
+  font-family: 'Koruri-Light';
+  src: url("../../font/Koruri-Light.ttf") format("opentype"); }
+
+html,
+body {
+  font-family: 'Koruri-Regular' sans-serif, '微軟正黑體', Microsoft JhengHei;
+  width: 100%; }
+
+/* font-size */
+html {
+  font-size: 62.5%; }
+
+.bold_font {
+  font-family: 'Koruri-Bold', sans-serif, '微軟正黑體', Microsoft JhengHei;
+  font-weight: bold; }
+
+.regular_font {
+  font-family: 'Koruri-Regular', sans-serif, '微軟正黑體', Microsoft JhengHei;
+  letter-spacing: 1px; }
+
+.light_font {
+  font-family: 'Koruri-Light', sans-serif, '微軟正黑體', Microsoft JhengHei;
+  letter-spacing: 1px;
+  line-height: 1.5; }
+
+.special_size {
+  font-size: 9rem; }
+
+.title_size {
+  font-size: 5rem; }
+
+.subtitle_size {
+  font-size: 2.5rem; }
+
+.p_size {
+  font-size: 1.6rem; }
+
+.others_size {
+  font-size: 1.2rem; }
+
+@media screen and (min-width: 1600px) {
+  .special_size {
+    font-size: 9rem; }
+  .title_size {
+    font-size: 5rem; }
+  .subtitle_size {
+    font-size: 2.5rem; }
+  .p_size {
+    font-size: 1.8rem; }
+  .others_size {
+    font-size: 1.2rem; } }
+
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+  .special_size {
+    font-size: 9rem; }
+  .title_size {
+    font-size: 4.5rem; }
+  .subtitle_size {
+    font-size: 2.5rem; }
+  .p_size {
+    font-size: 1.7rem; }
+  .others_size {
+    font-size: 1.2rem; } }
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .special_size {
+    font-size: 8rem; }
+  .title_size {
+    font-size: 4rem; }
+  .subtitle_size {
+    font-size: 2.2rem; }
+  .p_size {
+    font-size: 1.6rem; }
+  .others_size {
+    font-size: 1.1rem; } }
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .special_size {
+    font-size: 6rem; }
+  .title_size {
+    font-size: 3rem; }
+  .subtitle_size {
+    font-size: 2.2rem; }
+  .p_size {
+    font-size: 1.4rem; }
+  .others_size {
+    font-size: 1.1rem; } }
+
+@media screen and (max-width: 768px) {
+  .special_size {
+    font-size: 5rem; }
+  .title_size {
+    font-size: 3rem; }
+  .subtitle_size {
+    font-size: 2rem; }
+  .p_size {
+    font-size: 1.4rem; }
+  .others_size {
+    font-size: 1.1rem; } }

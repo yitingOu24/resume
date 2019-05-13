@@ -20,6 +20,20 @@ slider_button.click(function() {
     $('html,body').animate({ scrollTop: slider_obj_height }, 800);
 });
 
+// sroll&appea
+
+var s_fade = $(".section-fade");
+var s_fade_height = s_fade.offset().top;
+
+$(window).scroll(function() {
+    var window_height = $(window).height();
+    var window_scrollTop = $(window).scrollTop();
+    var document_height = $(document).height();
+
+    if (window_height + window_scrollTop > s_fade_height + 200) {
+        s_fade.addClass('section_fade_in');
+    }
+});
 
 
 start_fade();
